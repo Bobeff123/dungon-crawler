@@ -19,4 +19,7 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
-pause(100)
+pause(5000)
+tiles.setTilemap(tilemap`level2`)
+pause(1000)
+tiles.setTilemap(tilemap`level4`)
