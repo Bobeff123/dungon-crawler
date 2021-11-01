@@ -1,4 +1,10 @@
-tiles.setTilemap(tilemap`level1`)
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleSwitchUp, function (sprite, location) {
+    tiles.setTileAt(tiles.getTileLocation(12, 15), sprites.dungeon.doorOpenSouth)
+    tiles.setTileAt(tiles.getTileLocation(7, 0), sprites.dungeon.purpleSwitchDown)
+    tiles.setWallAt(tiles.getTileLocation(12, 15), false)
+    tiles.setWallAt(tiles.getTileLocation(7, 0), true)
+})
+tiles.setTilemap(tilemap`level5`)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -19,7 +25,3 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
-pause(5000)
-tiles.setTilemap(tilemap`level2`)
-pause(1000)
-tiles.setTilemap(tilemap`level4`)
