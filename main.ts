@@ -1,3 +1,6 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenSouth, function (sprite, location) {
+    tiles.setTilemap(tilemap`level8`)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleSwitchUp, function (sprite, location) {
     tiles.setTileAt(tiles.getTileLocation(12, 15), sprites.dungeon.doorOpenSouth)
     tiles.setTileAt(tiles.getTileLocation(7, 0), sprites.dungeon.purpleSwitchDown)
@@ -25,3 +28,4 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
+tiles.placeOnRandomTile(mySprite, sprites.dungeon.doorOpenWest)
