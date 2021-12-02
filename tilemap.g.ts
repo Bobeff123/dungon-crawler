@@ -144,11 +144,11 @@ namespace myTiles {
 `, [myTiles.transparency16,sprites.dungeon.purpleOuterEast0,sprites.dungeon.darkGroundNorthWest1,sprites.dungeon.purpleOuterWest0,sprites.dungeon.purpleOuterNorth1,sprites.dungeon.purpleOuterSouth1,sprites.dungeon.purpleOuterSouthWest,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.purpleOuterNorthWest,sprites.dungeon.purpleOuterSouthEast,sprites.dungeon.doorOpenWest,sprites.dungeon.doorLockedSouth,sprites.dungeon.purpleSwitchUp], TileScale.Sixteen);
             case "level8":
             case "level8":return tiles.createTilemap(hex`10001000000000000000000c0a0b000000000000000000000000000803090000000000000000000000000002030900000000000000000000000000020401000000000000000000000000000507060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
+. . . . . . . 2 . 2 . . . . . . 
+. . . . . . . 2 . 2 . . . . . . 
+. . . . . . . 2 . 2 . . . . . . 
+. . . . . . . 2 . 2 . . . . . . 
+. . . . . . . 2 2 2 . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 

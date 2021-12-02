@@ -1,5 +1,9 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenSouth, function (sprite, location) {
     tiles.setTilemap(tilemap`level8`)
+    tiles.placeOnRandomTile(mySprite, sprites.dungeon.doorOpenNorth)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
+    game.over(true, effects.confetti)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleSwitchUp, function (sprite, location) {
     tiles.setTileAt(tiles.getTileLocation(12, 15), sprites.dungeon.doorOpenSouth)
@@ -7,8 +11,9 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.purpleSwitchUp, function 
     tiles.setWallAt(tiles.getTileLocation(12, 15), false)
     tiles.setWallAt(tiles.getTileLocation(7, 0), true)
 })
+let mySprite: Sprite = null
 tiles.setTilemap(tilemap`level5`)
-let mySprite = sprites.create(img`
+mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
